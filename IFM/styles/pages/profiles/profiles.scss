@@ -1,0 +1,144 @@
+@import "../../global/skin";
+
+.profile-content {
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  //background-color: rgba(255,255,255, .3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-content h2 {
+  display: inline-block;
+  padding-bottom: 5px;
+  margin: 10px 0;
+  border-bottom: 3px solid $ifm-orange;
+}
+
+.perfect-circle-large{
+  margin-top: 5px;
+  min-width: 175px;
+  max-width: 175px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.perfect-circle-large img{
+  object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.profile-info {
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.profile-info h5 {
+  margin: 10px 0;
+}
+
+.profile-info p {
+  margin-top: 10px;
+  font-size: small;
+}
+
+.resources {
+  padding: 0 1px;
+}
+
+
+.resource {
+  text-align: center;
+  text-transform: uppercase;
+  height: 200px;
+  width: 100%;
+  margin: 1px 0;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  padding: 23px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: $ifm-blue-transparent;
+  transition: all .4s ease-in-out;
+}
+
+.resource-title {
+  font-size: x-large;
+  letter-spacing: 5px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.get-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.get {
+  width: 100%;
+  //padding: 18px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.get span {
+  padding: 5px 20px;
+  background-color: white;
+  color: $ifm-blue;
+  border-radius: $border-radius;
+}
+
+.price {
+  font-weight: 500;
+  width: 100%;
+  //padding: 23px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen  and (min-width : 800px) {
+  .profile-content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .resources {
+    padding: 0 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .resource {
+    text-align: center;
+    text-transform: uppercase;
+    height: 200px;
+    width: 33.33%;
+    margin: 1px .5px;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+}

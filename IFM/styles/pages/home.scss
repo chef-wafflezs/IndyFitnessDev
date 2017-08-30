@@ -1,0 +1,88 @@
+@import "../global/skin";
+@import "../global/animations";
+
+.home-container {
+  height: 100vh;
+  width: 100%;
+  background-position: top center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  150%;
+  z-index: -99;
+  overflow: hidden;
+}
+
+.home-content {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255,255,255, .2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-logo {
+  height: 60%;
+  max-height: 350px;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  z-index: 101;
+  animation: grow 1s;
+}
+
+.fa-chevron-down {
+  color: $ifm-blue;
+  padding: 2%;
+}
+
+.hidden-arrows {
+  visibility: hidden;
+}
+
+.down-arrows {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 5px;
+  z-index: 101;
+  text-decoration: none;
+}
+
+.arrow-one {
+  animation: blink 2s linear infinite;
+  animation-delay: .5s;
+}
+
+.arrow-two {
+  animation: blink 2s linear infinite;
+  animation-delay: 1s;
+}
+
+.arrow-three {
+  animation: blink 2s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-logo {
+    height: 300px;
+  }
+}
+
+@media only screen  and (min-width : 800px) {
+  .home-container {
+    background-position: center center;
+    background-size: 100%;
+  }
+
+  .home-content {
+    background-color: rgba(255,255,255, .5);
+  }
+}

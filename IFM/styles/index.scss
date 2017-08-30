@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// - - - - - - - - - - - - - - - - - - -
+// - - index.scss
+// contains an import section for libs, global, and modules, the inbox,
+// and a shame section for quick fixes and hacks.
+
+// - - - - - - - - - - - - - - - - - - -
+// - - global
+
+// - - global/skin
+// backgrounds, borders, box-shadow, etc
+@import 'global/_skin';
+
+// - - global/base
+// base-level tags (body, p, etc.)
+@import 'global/_base';
+
+
+// - - global/layout
+// margin, padding, sizing
+@import 'global/_layout';
+
+// - - global/typography
+// fonts and colors
+@import 'global/_typography';
+
+// - - global/animations
+// css transition animations
+@import 'global/_animations';
+
+// - - - - - - - - - - - - - - - - - - -
+// - - pages
+@import 'pages/home';
+@import 'pages/lists/lists';
+@import 'pages/profiles/profiles';
+@import 'pages/article/article';
+
+// - - - - - - - - - - - - - - - - - - -
+// - - sections
+// sections not necessarily page specific such as navigation
+
+@import 'sections/articles/articles';
+
+@import 'sections/navigation/arrows';
+@import 'sections/navigation/menu';
+
+@import 'sections/pageheaders/pageheaders';
+
